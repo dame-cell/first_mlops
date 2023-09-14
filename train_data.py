@@ -11,6 +11,6 @@ def read_data():
         else:
             print("DataFrame is empty.")
     except FileNotFoundError:
-        print(f"File not found: {file}")
+        print(f"File not found: {df}")
 
     return df
