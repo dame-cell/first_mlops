@@ -22,8 +22,7 @@ def model():
         criterion='gini',  # Splitting criterion ('gini' or 'entropy')
         max_depth=None,  # Maximum depth of the trees (None means nodes expand until they contain < min_samples_split samples)
         min_samples_split=2,  # Minimum samples required to split an internal node
-        min_samples_leaf=1,  # Minimum samples required to be at a leaf node
-        max_features='auto',  # Number of features to consider when looking for the best split
+        min_samples_leaf=1,  # Minimum samples required to be at a leaf node 
         bootstrap=True,  # Whether to bootstrap samples when building trees
         random_state=42,  # Random seed for reproducibility
         n_jobs=None,  # Number of CPU cores to use for parallelism (None uses all available cores)
