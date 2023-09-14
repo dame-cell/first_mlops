@@ -1,0 +1,17 @@
+Evaluation Results for Model 1:
+Precision: 0.46153846153846156
+Recall: 0.42857142857142855
+F1-Score: 0.4444444444444445
+Confusion Matrix:
+[[758  49]
+ [ 56  42]]
+Accuracy: 0.8839779005524862
+
+Evaluation Results for Model 2:
+Precision: 0.5063291139240507
+Recall: 0.40816326530612246
+F1-Score: 0.4519774011299435
+Confusion Matrix:
+[[768  39]
+ [ 58  40]]
+Accuracy: 0.8928176795580111
