@@ -14,5 +14,5 @@ jobs:
           pip install -r requirements.txt
           python train.py
 
-          echo "Model evalutaion"
-          cat evaluation_results.txt
+          echo "## Model evalutaion" > report.md 
+          cat evaluation_results.txt >> report.md
