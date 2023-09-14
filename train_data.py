@@ -1,9 +1,8 @@
 import pandas as pd 
 
 def read_data():
-    file = r"E:\to_do.py\bank.csv"
     try:
-        df = pd.read_csv(file, delimiter=";")
+        df = pd.read_csv('bank.csv', delimiter=";")
         df.drop(columns=['day', 'month'], inplace=True)
 
         # Check if the DataFrame is not empty
