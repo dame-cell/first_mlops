@@ -26,4 +26,4 @@ jobs:
         run: |
           # Post reports as comments in GitHub PRs
           cat evaluation_results.txt >> report.md
-          cml comment create report.md
+
