@@ -1,4 +1,4 @@
-name: mlops-project
+name: ml-ops
 on: [push]
 jobs:
   run:
@@ -7,7 +7,7 @@ jobs:
     # container: ghcr.io/iterative/cml:0-dvc2-base1
     steps:
       - uses: actions/checkout@v3
-
+      # may need to setup NodeJS & Python3 on e.g. self-hosted
       # - uses: actions/setup-node@v3
       #   with:
       #     node-version: '16'
@@ -25,6 +25,5 @@ jobs:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Post reports as comments in GitHub PRs
-          echo "## Metrics" >> report.md
           cat evaluation_results.txt >> report.md
           cml comment create report.md
