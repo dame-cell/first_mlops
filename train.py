@@ -96,21 +96,8 @@ precision_1,recall_1 ,f1_1 ,conf_matrix_1 ,accuracy_1 = evaluation(y_test,y_pred
 precision_2 ,recall_2 ,f1_2 , conf_matrix_2 , accuracy_2 = evaluation(y_test,y_pred_adjusted_1)
 
 with open("evaluation_results.txt", "w") as file:
-    file.write("Evaluation Results for Model 1:\n")
-    file.write(f"Precision: {precision_1}\n")
-    file.write(f"Recall: {recall_1}\n")
-    file.write(f"F1-Score: {f1_1}\n")
-    file.write("Confusion Matrix:\n")
-    file.write(str(conf_matrix_1) + "\n")
     file.write(f"Accuracy: {accuracy_1}\n")
     file.write("\n")
-
-    file.write("Evaluation Results for Model 2:\n")
-    file.write(f"Precision: {precision_2}\n")
-    file.write(f"Recall: {recall_2}\n")
-    file.write(f"F1-Score: {f1_2}\n")
-    file.write("Confusion Matrix:\n")
-    file.write(str(conf_matrix_2) + "\n")
     file.write(f"Accuracy: {accuracy_2}\n")
 
 shap_plots(random_forest , X_test)
